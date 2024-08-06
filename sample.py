@@ -48,6 +48,7 @@ for row in sheet.iter_rows(values_only=True):   # for loop to get all contents f
             a = 0                               # reset the initialize variable
             break                               # break the second for loop
         else:                                   # else statement
+            a += 1                              # incriment a variable
             continue                            # continue if conditions not met
     
     paragraph = docx_file.add_paragraph()       # initialize the paragraph feature
